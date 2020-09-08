@@ -19,17 +19,17 @@ html {
 }
 
 body {
-    font-size: 1rem;
     font-weight: normal;
     font-family: -windows-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
     Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
-    padding-top: var(--space-4);
 }
 
 a {
-    color: var(--color-red);
-    text-decoration: none;
+        color: #772ce8;
+        color: var(--color-text-link);
+        text-decoration: none;
 }
+
 
 button {
     background-color: transparent;

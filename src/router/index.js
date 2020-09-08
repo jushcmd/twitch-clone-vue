@@ -9,6 +9,18 @@ const routes = [
     path: '/',
     name: 'Home',
     component: Home
+  },
+  {
+    path: '/following',
+    name: 'Followed',
+    component: () =>
+      import(/* webpackChunkName: "profile" */ '../views/followed')
+  },
+  {
+    path: '/directory',
+    name: 'Browse',
+    component: () =>
+      import(/* webpackChunkName: "browse" */ '../views/directory')
   }
 ]
 

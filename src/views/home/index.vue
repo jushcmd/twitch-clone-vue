@@ -26,7 +26,6 @@ h1 {
 
   @media (--t) {
     color: blue;
-    --font-size-3:
   }
 }
 </style>
