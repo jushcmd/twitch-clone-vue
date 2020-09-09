@@ -5,24 +5,12 @@ import Home from '../views/home/index.vue'
 Vue.use(VueRouter)
 
 const routes = [
-  {
-    path: '/',
-    name: 'Home',
-    component: Home
-  },
-  {
-    path: '/following',
-    name: 'Followed',
-    component: () =>
-      import(/* webpackChunkName: "profile" */ '../views/followed')
-  },
-  {
-    path: '/directory',
-    name: 'Browse',
-    component: () =>
-      import(/* webpackChunkName: "browse" */ '../views/directory')
-  }
+ path: '/', name:'directory', component: Home,
+      children: [
+        { path: '/following', name:'Followed', component: () => import(/* webpackChunkName: "profile" */ '../views/followed') },
+        { path: '/Browse', name:'Browse', component: () => import(/* webpackChunkName: "profile" */ '../views/browse') },
 ]
+ 
 
 const router = new VueRouter({
   mode: 'history',
