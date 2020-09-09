@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/home'
 import Directory from '../views/directory'
+import Home from '../views/home'
 
 Vue.use(VueRouter)
 
@@ -12,16 +12,26 @@ const routes = [
     component: Home
   },
   {
-    path: '/directory/followed',
-    name: 'following',
-    component: () =>
-      import(/* webpackChunkName: "profile" */ '../views/directory/following')
+    path: '/directory',
+    name: 'directory',
+    component: Directory
   },
   {
-    path: '/browse',
-    name: 'Browse',
+    path: '/directory',
+    name: 'Directory',
+
     component: () =>
-      import(/* webpackChunkName: "profile" */ '../views/directory')
+      import(/* webpackChunkName: "profile" */ '../views/directory'),
+    children: [
+      {
+        path: '',
+        name: 'Following',
+        component: () =>
+          import(
+            /* webpackChunkName: "profile" */ '../views/directory/following'
+          )
+      }
+    ]
   }
 ]
 
