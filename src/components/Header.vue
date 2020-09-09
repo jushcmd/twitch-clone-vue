@@ -3,10 +3,10 @@
     <router-link class="home" to="/">
       <IconHome />
     </router-link>
-    <router-link to="/followed">
+    <router-link to="/Followed">
         <IconHeart />
     </router-link>
-    <router-link to="/directory">
+    <router-link to="/Browse">
       <IconBrowse />
     </router-link>
   </header>
