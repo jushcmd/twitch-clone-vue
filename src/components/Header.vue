@@ -1,34 +1,34 @@
 <template>
   <header class="header">
-
+    <Container class="header-inner">
     <router-link class="home" to="/">
       <IconHome />
     </router-link>
-    <form class="form">
-      <input type="text" placeholder="Ara">
+    <!-- Search -->
+    <form class="search">
+      <input type="text" placeholder="Ara ulan" />
     </form>
     <nav>
     <router-link to="/directory/followed">
-        <IconHeart />
+       Takip Edilenler
     </router-link>
     <router-link to="/directory">
-      <IconBrowse />
+      Gözat
     </router-link>
     </nav>
+    </Container>
   </header>
 </template>
 
 <script>
 import IconHome from '@/icons/home.svg'
-import IconHeart from '@/icons/heart.svg'
-import IconBrowse from '@/icons/browse.svg'
+import Container from "@/components/Container";
 
 export default {
   name: 'MainHeader',
   components: {
     IconHome,
-    IconHeart,
-    IconBrowse
+    Container
   }
 }
 </script>
@@ -40,18 +40,36 @@ export default {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
-  height: 24px;
+  height: 50px;
+}
+.header-inner{
+  height: var(--header-height);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media (--t) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+  }
 }
 
-.form {
-  width: 341px;
-  height: 27px;
-  background-color: var(--color-background-input);
-}
-.home {
 
+.search{
+  display: none;
+  @media (--t) {
+    display: block;
+    text-align: center;
 
-
-
+    input {
+      width: 215px;
+      height: 28px;
+      border: 1px solid #ccc);
+      background-color: #ffffff) ;
+      border-radius: 4px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
 }
 </style>
