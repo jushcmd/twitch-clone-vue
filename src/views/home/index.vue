@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <h1>Home</h1>
-    <CustomText>Twitch cloneee</CustomText>
+    <CustomText>Twitch clone</CustomText>
 
   </div>
 </template>

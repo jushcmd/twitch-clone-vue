@@ -30,6 +30,25 @@ const routes = [
           import(
             /* webpackChunkName: "profile" */ '../views/directory/following'
           )
+      },
+
+      {
+        path: '',
+        name: 'Espor',
+        component: () =>
+          import(
+            /* webpackChunkName: "profile" */ '../views/directory/espor'
+            )
+
+      },
+      {
+        path: '',
+        name: 'Music',
+        component: () =>
+          import(
+            /* webpackChunkName: "profile" */ '../views/directory/Music'
+            )
+
       }
     ]
   }
