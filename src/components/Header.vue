@@ -1,43 +1,43 @@
 <template>
   <header class="header">
     <Container class="header-inner">
-    <router-link class="home" to="/">
-      <IconHome />
-    </router-link>
+        <nav>
+            <router-link to="/directory/followed" class="following">
+                Takip Edilen
+            </router-link>
+            <router-link to="/directory" class="directory">
+                Gözat
+            </router-link>
+            <router-link to="/directory/espor" class="espor" >
+                Espor
+            </router-link>
+            <router-link to="/directory/music" class="music">
+                Müzik
+            </router-link>
+            <router-link to="/directory/tripoints" class="tripoints">
+                ...
+            </router-link>
+        </nav>
     <!-- Search -->
     <form class="search">
       <input type="text" placeholder="Ara ulan" />
     </form>
-    <nav>
-    <router-link to="/directory/followed" class="following">
-       Takip Edilen
-    </router-link>
-    <router-link to="/directory" class="directory">
-      Gözat
-    </router-link>
-        <router-link to="/directory/espor" class="espor" >
-            Espor
+        <router-link class="home" to="/">
+            sa
         </router-link>
-        <router-link to="/directory/music" class="music">
-            Müzik
-        </router-link>
-        <router-link to="/directory/tripoints" class="tripoints">
-             ...
-        </router-link>
-    </nav>
+
     </Container>
   </header>
 </template>
 
 <script>
-import IconHome from '@/icons/home.svg'
+
 import Container from "@/components/Container";
 
 
 export default {
   name: 'MainHeader',
   components: {
-    IconHome,
     Container
   }
 }
@@ -84,28 +84,33 @@ export default {
     font-weight: bold;
     text-decoration: none;
 
+
 }
 
 .directory {
     font-size: 1.1rem;
     font-weight: bold;
     text-decoration: none;
+    margin-left: 18px;
 }
 
 .espor {
     font-size: 1.1rem;
     font-weight: bold;
     text-decoration: none;
+    margin-left: 18px;
 }
 .music {
     font-size: 1.1rem;
     font-weight: bold;
     text-decoration: none;
+    margin-left: 18px;
 }
 .tripoints {
     font-size: 1.5rem;
     font-weight: bold;
     text-decoration: none;
+    margin-left: 18px;
 }
 
 
