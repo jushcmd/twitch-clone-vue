@@ -1,7 +1,9 @@
 <template>
   <figure class="avatar">
+
     <img :src="src" :alt="alt" :width="size" :height="size" />
-    <h3>Kodbilen Yayında | !dc !düş</h3>
+
+
   </figure>
 </template>
 
@@ -25,13 +27,17 @@ export default {
 </script>
 
 <style scoped>
-h3{
+figure{
   display: block;
-  font-size: 1.17em;
   margin-block-start: 1em;
   margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 10px;
-  font-weight: bold;
+}
+.avatar{
+  display: flex !important;
+  display: block;
+  box-sizing: border-box;
+  margin-right: 1rem!important;
+  float: left;
+
 }
 </style>

@@ -25,9 +25,14 @@ body {
 }
 
 a {
-        color: #772ce8;
-        color: var(--color-text-link);
-        text-decoration: none;
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+a:hover{
+    color: rgb(137, 71, 234);
+    color: var(--color-text-link);
+    cursor: pointer;
 }
 
 
@@ -38,19 +43,14 @@ button {
 
 img {
     max-width: 100%;
-    vertical-align: middle;
+    vertical-align: top;
     cursor: pointer;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-b,
-strong,
-label {
+h1, h2, h3 {
+    line-height: 1.2;
+}
+h3, h4 {
     font-weight: 600;
 }
 div {

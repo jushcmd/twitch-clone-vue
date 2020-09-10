@@ -1,17 +1,12 @@
 <template>
   <div class="home">
-    <h1>Home</h1>
-    <h1>Kodwitch</h1>
-
-
-   <br />
-    <br />
+    <div>
+    <h3  style="font-weight: 600!important; font-size: 25px">Seveceğinizi düşündüğümüz Canlı kanallar</h3>
+    </div>
     <br />
 
-    <Card />
-    <Avatar :size="40" />
-    <br />
-    <br />
+    <Card /><Card /><Card />
+
     <br />
   </div>
 </template>
@@ -19,12 +14,10 @@
 <script>
 
 import Card from "@/components/Card";
-import Avatar from "@/components/Avatar";
 
 export default {
   name: 'Home',
   components: {
-    Avatar,
     Card
   }
 }

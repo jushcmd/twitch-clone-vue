@@ -85,6 +85,7 @@ export default {
 <style scoped>
 .header {
   background-color: ghostwhite;
+  height: 50px;
 
 }
 .header-inner{
@@ -119,16 +120,28 @@ export default {
 }
 
 .following {
+  position: absolute;
+  top: 10px;
     font-size: 1.1rem;
     font-weight: bold;
     text-decoration: none;
     margin-left: 13px;
-    margin-bottom: 19px;
+}
+following:hover {
+  position: absolute;
+  top: 10px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-decoration: none;
+  margin-left: 13px;
 
 }
 
 
 .directory {
+  position: absolute;
+  top: 10px;
+  padding-left: 100px;
     font-size: 1.1rem;
     font-weight: bold;
     text-decoration: none;
@@ -137,6 +150,9 @@ export default {
 }
 
 .espor {
+  position: absolute;
+  top: 10px;
+  padding-left: 150px;
     font-size: 1.1rem;
     font-weight: bold;
     text-decoration: none;
@@ -144,6 +160,9 @@ export default {
     margin-bottom: 19px;
 }
 .music {
+  position: absolute;
+  top: 10px;
+  padding-left: 200px;
     font-size: 1.1rem;
     font-weight: bold;
     text-decoration: none;
@@ -151,6 +170,9 @@ export default {
     margin-bottom: 19px;
 }
 .tripoints {
+  position: absolute;
+  top: 3px;
+  padding-left: 260px;
     font-size: 1.5rem;
     font-weight: bold;
     text-decoration: none;
@@ -161,16 +183,19 @@ export default {
     margin-left: 18px;
     text-align: right;
     position: inherit;
+    float: right;
 }
 .bell {
      margin-left: 18px;
      text-align: right;
      position: inherit;
+    float: right;
  }
 .whisper {
     margin-left: 18px;
     text-align: right;
     position: inherit;
+    float: right;
 }
 .browse {
     margin-left: 8px;
@@ -181,6 +206,7 @@ export default {
     margin-left: 18px;
     text-align: right;
     position: inherit;
+    float: right;
 }
 
 .input {
@@ -196,6 +222,7 @@ export default {
   margin-bottom: 30px;
   text-align: right;
   position: inherit;
+  float: right;
 
 }
 .twitchmainicon {
