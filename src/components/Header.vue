@@ -63,8 +63,7 @@ export default {
     IconBrowse,
     IconBell,
     IconWhisper,
-    IconBit,
-    Avatar
+    IconBit
   }
 }
 </script>

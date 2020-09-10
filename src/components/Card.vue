@@ -39,8 +39,6 @@ export default {
   padding: 0.5rem;
 }
 .card-media:after{
-  height: .6rem;
-  transform: scaleY(50);
 }
 .card-media:hover{
   background: #9147ff;
