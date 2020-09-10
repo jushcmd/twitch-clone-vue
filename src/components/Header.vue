@@ -1,7 +1,10 @@
 <template>
   <header class="header">
     <Container class="header-inner">
-        <nav class="nav1">
+      <nav>
+        <router-link to="/" class="twitchmainicon">
+          <TwitchMainİcon />
+        </router-link>
             <router-link to="/directory/followed" class="following">
                 Takip Edilen
             </router-link>
@@ -37,10 +40,16 @@
            <router-link class="whisper" to="/">
                <IconWhisper />
            </router-link>
-            <router-link class="bit" to="/">
-                <IconBit />
+          <router-link class="bit" to="/">
+              <IconBit />
             </router-link>
-       </nav>
+          <router-link class="bital" to="/">
+            Bit Al
+          </router-link>
+          <router-link>
+            <HeaderSahip />
+          </router-link>
+        </nav>
     </Container>
   </header>
 </template>
@@ -53,6 +62,8 @@ import IconBrowse from "@/icons/browse.svg"
 import IconBell from "@/icons/bell.svg"
 import IconWhisper from "@/icons/whisper.svg"
 import IconBit from "@/icons/bit.svg"
+import HeaderSahip from "@/components/Sahipbilgisi.vue"
+import TwitchMainİcon from "@/icons/twitchmainicon.svg"
 
 
 export default {
@@ -63,7 +74,9 @@ export default {
     IconBrowse,
     IconBell,
     IconWhisper,
-    IconBit
+    IconBit,
+    HeaderSahip,
+    TwitchMainİcon
   }
 }
 </script>
@@ -79,7 +92,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  max-height: 60px;
+  max-height: 50px;
     @media (--t) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -97,7 +110,7 @@ export default {
       width: 215px;
       height: 28px;
       border: 1px solid #ccc);
-      background-color: #d3d3d9) ;
+      background-color: #d3d3d9);
       border-radius: 4px;
       padding-left: 20px;
       padding-right: 20px;
@@ -109,14 +122,18 @@ export default {
     font-size: 1.1rem;
     font-weight: bold;
     text-decoration: none;
+    margin-left: 13px;
+    margin-bottom: 19px;
 
 }
+
 
 .directory {
     font-size: 1.1rem;
     font-weight: bold;
     text-decoration: none;
     margin-left: 18px;
+    margin-bottom: 19px;
 }
 
 .espor {
@@ -124,36 +141,67 @@ export default {
     font-weight: bold;
     text-decoration: none;
     margin-left: 18px;
+    margin-bottom: 19px;
 }
 .music {
     font-size: 1.1rem;
     font-weight: bold;
     text-decoration: none;
     margin-left: 18px;
+    margin-bottom: 19px;
 }
 .tripoints {
     font-size: 1.5rem;
     font-weight: bold;
     text-decoration: none;
     margin-left: 18px;
+    margin-bottom: 19px;
 }
 .prime {
     margin-left: 18px;
-
+    text-align: right;
+    position: inherit;
 }
 .bell {
      margin-left: 18px;
-
+     text-align: right;
+     position: inherit;
  }
 .whisper {
     margin-left: 18px;
-
+    text-align: right;
+    position: inherit;
 }
 .browse {
     margin-left: 8px;
     margin-top: 10px;
+    position: inherit;
 }
 .bit {
     margin-left: 18px;
+    text-align: right;
+    position: inherit;
 }
+
+.input {
+  width: 341px;
+  height: 27px;
+  background-color: var(--color-background-input);
+}
+.bital {
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-decoration: none;
+  margin-left: 8px;
+  margin-bottom: 30px;
+  text-align: right;
+  position: inherit;
+
+}
+.twitchmainicon {
+
+
+}
+
+
 </style>
