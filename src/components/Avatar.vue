@@ -1,7 +1,7 @@
 <template>
   <figure class="avatar">
     <img :src="src" :alt="alt" :width="size" :height="size" />
-    <h3>Kodbilen Yayında | !çöp !dc !düş</h3>
+    <h3>Kodbilen Yayında | !dc !düş</h3>
   </figure>
 </template>
 

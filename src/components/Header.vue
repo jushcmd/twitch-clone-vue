@@ -1,7 +1,7 @@
 <template>
   <header class="header">
     <Container class="header-inner">
-        <nav>
+        <nav class="nav1">
             <router-link to="/directory/followed" class="following">
                 Takip Edilen
             </router-link>
@@ -19,13 +19,28 @@
             </router-link>
         </nav>
     <!-- Search -->
+<nav>
     <form class="search">
-      <input type="text" placeholder="Ara ulan" />
-    </form>
-        <router-link class="home" to="/">
-            sa
+      <input type="text" placeholder="Ara ulan"/>
+        <router-link class="browse" to="/">
+            <IconBrowse />
         </router-link>
-
+    </form>
+</nav>
+        <nav>
+        <router-link class="prime" to="/">
+            <IconPrime />
+        </router-link>
+           <router-link class="bell" to="/">
+               <IconBell />
+           </router-link>
+           <router-link class="whisper" to="/">
+               <IconWhisper />
+           </router-link>
+            <router-link class="bit" to="/">
+                <IconBit />
+            </router-link>
+       </nav>
     </Container>
   </header>
 </template>
@@ -33,12 +48,23 @@
 <script>
 
 import Container from "@/components/Container";
+import IconPrime from "@/icons/prime.svg"
+import IconBrowse from "@/icons/browse.svg"
+import IconBell from "@/icons/bell.svg"
+import IconWhisper from "@/icons/whisper.svg"
+import IconBit from "@/icons/bit.svg"
 
 
 export default {
   name: 'MainHeader',
   components: {
-    Container
+    Container,
+    IconPrime,
+    IconBrowse,
+    IconBell,
+    IconWhisper,
+    IconBit,
+    Avatar
   }
 }
 </script>
@@ -46,7 +72,7 @@ export default {
 
 <style scoped>
 .header {
-  background-color: yellow;
+  background-color: ghostwhite;
 
 }
 .header-inner{
@@ -59,6 +85,7 @@ export default {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
+    border-bottom: #d3d3d9;
   }
 }
 .search{
@@ -83,7 +110,6 @@ export default {
     font-size: 1.1rem;
     font-weight: bold;
     text-decoration: none;
-
 
 }
 
@@ -112,8 +138,23 @@ export default {
     text-decoration: none;
     margin-left: 18px;
 }
+.prime {
+    margin-left: 18px;
 
+}
+.bell {
+     margin-left: 18px;
 
+ }
+.whisper {
+    margin-left: 18px;
 
-
+}
+.browse {
+    margin-left: 8px;
+    margin-top: 10px;
+}
+.bit {
+    margin-left: 18px;
+}
 </style>
