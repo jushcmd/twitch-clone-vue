@@ -2,26 +2,41 @@
   <article>
   <div class="card">
     <!-- Header -->
+
     <header class="card-header">
-      
+
     </header>
 
     <!-- media -->
     <div class="card-media">
       <div class="card">
-        <div class="card-bottom">
+        <div class="live">
+        </div>
       <img src="../images/kodbilbakkal.png">
+          <div>
+
         </div>
       </div>
-      <Avatar :size="50" />
+      <Avatar :size="40" />
         <div class="tw-ellipsis tw-font-size-5">
 
           <a href="https://www.twitch.tv/kodbilen">
-            <h3>Kodbilen Yayında | !çöp !dc !düş</h3>
+            <h4>Kodbilen Yayında | !çöp !dc !düş</h4>
           </a>
 
         </div>
-    </div>
+      <a href="https://www.twitch.tv/kodbilen">
+        <h3 style="float: left">KodBilen</h3>
+      </a>
+      <div style="float: left; margin-left: 10px">
+        <a href="https://www.twitch.tv/kodbilen">
+          <h3 style="float: left">KodBilen</h3>
+        </a>
+
+      </div>
+
+      </div>
+
 
     <!-- actions -->
 
@@ -30,6 +45,7 @@
 
 
   </div>
+
   </article>
 </template>
 
@@ -44,9 +60,19 @@ export default {
 </script>
 
 <style scoped>
+
 .card{
+
   margin-right: 1rem !important;
   img{
+    .live{
+      z-index: -1;
+      position: absolute;
+      height: 30px;
+      background-color: red;
+      left: 20px;
+      top: 20px;
+    }
     width: 400px;
     height: 248px;
     box-sizing: border-box;
@@ -56,6 +82,13 @@ export default {
     padding: 0.3rem;
   }
   .card:hover{
+    .live{
+      position: absolute;
+      height: 30px;
+      background-color: red;
+      left: 20px;
+      top: 20px;
+    }
       background: #9147ff;
       background: var(--color-accent);
       transform-origin: 0 100%;
@@ -64,9 +97,7 @@ export default {
       transition-delay: 75ms;
   }
 }
-.card-bottom{
 
-}
 .card-media{
   float: left;
 

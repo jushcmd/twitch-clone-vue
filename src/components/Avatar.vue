@@ -38,6 +38,7 @@ figure{
   box-sizing: border-box;
   margin-right: 1rem!important;
   float: left;
+  margin-top: 5px;
 
 }
 </style>

@@ -24,7 +24,7 @@
     <!-- Search -->
 <nav>
     <form class="search">
-      <input type="text" placeholder="Ara ulan"/>
+      <input type="text" placeholder="Ara"/>
         <router-link class="browse" to="/">
             <IconBrowse />
         </router-link>
