@@ -23,18 +23,29 @@
               />
 
               <v-card-subtitle></v-card-subtitle>
-              <v-avatar>
+              <v-avatar class="float-left mr-4">
                 <img
                   src="https://static-cdn.jtvnw.net/jtv_user_pictures/1872225b-c797-4b35-b172-007c1a1fdb66-profile_image-70x70.png"
                   alt="Kodbilen"
                 />
               </v-avatar>
-              <v-card-text
-                ><div class="float-left">
+              <div>
                   <a href="#"> Kodbilen Yayında | !çöp !düş</a>
                 </div>
-                <div>Kodbilen</div></v-card-text
-              >
+                <div>Kodbilen</div>
+                <div class="ml-16">Oyun</div>
+                 <div class="ml-15">
+                   <v-responsive class="text-center black lighten-2 rounded-pill d-inline-flex align-center justify-center ml-1 ma-1 font-weight-bold grey--text">
+                     <span style="font-size:15px"> Etiket</span>
+                   </v-responsive>
+                    <v-responsive class="text-center black lighten-2 rounded-pill d-inline-flex align-center justify-center ml-1 ma-1 font-weight-bold grey--text">
+                     <span style="font-size:15px"> Etiket</span>
+                   </v-responsive>
+                    <v-responsive class="text-center black lighten-2 rounded-pill d-inline-flex align-center justify-center ml-1 ma-1 font-weight-bold grey--text">
+                    <span style="font-size:15px"> Etiket</span>
+                   </v-responsive>
+                 </div>
+               <v-card-text> </v-card-text>
               <v-card-actions> </v-card-actions>
             </v-card>
           </v-col>
