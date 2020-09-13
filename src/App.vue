@@ -5,8 +5,9 @@
     <!-- Header Bölümü END -->
 
     <!-- Container -->
-    <v-content>
+    <v-main>
       <v-container>
+        <h3>Seveceğinizi düşündüğümüz Canlı kanallar</h3>
         <v-row class="mb-4">
           <v-col
             xs="12"
@@ -17,12 +18,15 @@
             v-for="(item, index) in 3"
             :key="index"
           >
-            <v-card class="elevation-0">
-              <v-img
-                src="https://raw.githubusercontent.com/SelimPolat16/twitch-clone-vue/vue_eskiversion/src/images/kodbilbakkal.png"
-              />
+            <v-card class="elevation-0 justify">
+              <div class="shadow">
+                <img
+                  src="https://raw.githubusercontent.com/SelimPolat16/twitch-clone-vue/vue_eskiversion/src/images/kodbilbakkal.png"
+                  class=""
+                />
+              </div>
 
-              <v-card-subtitle></v-card-subtitle>
+              <v-card-subtitle style="padding: 3px"></v-card-subtitle>
               <v-avatar class="float-left mr-4">
                 <img
                   src="https://static-cdn.jtvnw.net/jtv_user_pictures/1872225b-c797-4b35-b172-007c1a1fdb66-profile_image-70x70.png"
@@ -30,28 +34,37 @@
                 />
               </v-avatar>
               <div>
-                  <a href="#"> Kodbilen Yayında | !çöp !düş</a>
-                </div>
-                <div>Kodbilen</div>
-                <div class="ml-16">Oyun</div>
-                 <div class="ml-15">
-                   <v-responsive class="text-center black lighten-2 rounded-pill d-inline-flex align-center justify-center ml-1 ma-1 font-weight-bold grey--text">
-                     <span style="font-size:15px"> Etiket</span>
-                   </v-responsive>
-                    <v-responsive class="text-center black lighten-2 rounded-pill d-inline-flex align-center justify-center ml-1 ma-1 font-weight-bold grey--text">
-                     <span style="font-size:15px"> Etiket</span>
-                   </v-responsive>
-                    <v-responsive class="text-center black lighten-2 rounded-pill d-inline-flex align-center justify-center ml-1 ma-1 font-weight-bold grey--text">
-                    <span style="font-size:15px"> Etiket</span>
-                   </v-responsive>
-                 </div>
-               <v-card-text> </v-card-text>
+                <a href="#"> Kodbilen Yayında | !çöp !düş</a>
+              </div>
+              <div><a href=""> Kodbilen</a></div>
+              <div class="ml-16"><a href="">Bilim ve Teknoloji</a></div>
+              <div class="ml-15">
+                <v-responsive
+                  class="text-center text-decoration-none grey lighten-2 rounded-pill d-inline-flex align-center justify-center mr-1 ml-2 ma-2 font-weight-bold grey--text"
+                >
+                  <a href=""
+                    ><span style="font-size: 0.8rem; padding: 0 0.8rem">
+                      Türkçe</span
+                    ></a
+                  >
+                </v-responsive>
+                <v-responsive
+                  class="text-center grey lighten-2 rounded-pill d-inline-flex align-center justify-center ml-1 ma-1 font-weight-bold grey--text"
+                >
+                  <a href=""
+                    ><span style="font-size: 0.8rem; padding: 0 0.8rem">
+                      Programlama</span
+                    ></a
+                  >
+                </v-responsive>
+              </div>
+              <v-card-text> </v-card-text>
               <v-card-actions> </v-card-actions>
             </v-card>
           </v-col>
         </v-row>
       </v-container>
-    </v-content>
+    </v-main>
     <!-- Container END -->
   </v-app>
 </template>
@@ -66,20 +79,20 @@ export default {
 }
 </script>
 
+<style>
+@import './assets/styles/main.css';
+</style>
+
 <style scoped>
-img {
-  max-width: 100%;
-  vertical-align: top;
-  cursor: pointer;
+.shadow {
+  position: relative;
+  transition: 0.5s ease;
 }
-a {
-  color: inherit;
-  text-decoration: none;
-  cursor: pointer;
-}
-a:hover {
-  color: rgb(137, 71, 234);
-  color: var(--color-text-link);
-  cursor: pointer;
+.shadow:hover {
+  transform: translateY(-5px);
+  transform: translateX(6px);
+  transition: 0.5s ease;
+  border-bottom: 8px solid #660099;
+  border-left: 7px solid #290099;
 }
 </style>
