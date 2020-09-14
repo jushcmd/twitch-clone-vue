@@ -3,7 +3,7 @@
 }
 
 .shadow img:hover {
-  box-shadow: 1px 1px #9147ff, 2px 2px#9147ff 3px 3px#9147ff, 4px 4px#9147ff,
+  box-shadow: 5px 5px #9147ff, 2px 2px#9147ff 3px 3px#9147ff, 4px 4px#9147ff,
     5px 5px#9147ff, 6px 6px #9147ff;
   -webkit-transform: translateX(-3px);
   transform: translateX(-3px);
@@ -23,4 +23,12 @@ a {
 a:hover {
   color: rgb(137, 71, 234) !important;
   cursor: pointer;
+}
+body,
+h4,
+h5,
+h6,
+html,
+p {
+  line-height: 1.5 !important;
 }
