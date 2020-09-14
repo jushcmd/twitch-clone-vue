@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <!-- Header Bölümü -->
-    <v-app-bar app clipped-left>
+    <v-app-bar app clipped-left color="white accent-4">
       <v-app-bar-nav />
       <v-icon class="mx-1" large>mdi-twitch</v-icon>
       <v-toolbar-title class="align-center">
@@ -23,32 +23,17 @@
         color="black"
       />
       <v-spacer />
-      <v-icon class="ml-15">mdi-crown-outline</v-icon>
-      <v-btn class="ml-0" icon> </v-btn>
+      <v-btn icon>
+        <v-icon>mdi-crown-outline</v-icon>
+      </v-btn>
       <v-btn class="ma-2" icon>
         <v-icon class="ml-3">mdi-bell</v-icon>
-        <v-card-actions>
-          <v-spacer />
-          <v-btn class="mr-6" color="Default" text @click="menu = false">
-            <svg
-              width="20px"
-              height="20px"
-              version="1.1"
-              viewBox="0 0 20 20"
-              x="0px"
-              y="0px"
-              class="ScIconSVG-sc-1bgeryd-1 cMQeyU"
-            >
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M3 12l7-10 7 10-7 6-7-6zm2.678-.338L10 5.487l4.322 6.173-.85.728L10 11l-3.473 1.39-.849-.729z"
-              ></path>
-            </svg>
-            Bit Al
-          </v-btn>
-        </v-card-actions>
       </v-btn>
+      <v-card-actions>
+        <v-spacer />
+        <v-btn color="Default" text @click="menu = false"> Bit Al </v-btn>
+      </v-card-actions>
+
       <v-btn class="ma-2" icon>
         <v-icon>mdi-message-outline</v-icon>
       </v-btn>
@@ -116,9 +101,8 @@
             xs="12"
             sm="6"
             md="4"
-            lg="3"
-            xl="2"
-            v-for="(item, index) in 4"
+            lg="4"
+            v-for="(item, index) in 3"
             :key="index"
           >
             <v-card class="elevation-0 justify">
@@ -177,15 +161,14 @@
           <a href="#">Kategoriler</a>
         </h2>
         <!-- Kategoriler Card -->
-        <v-row class="mb-4">
+        <v-row class="mb-12">
           <v-col
             cols="12"
             xs="12"
             sm="6"
             md="6"
-            lg="3"
-            xl="2"
-            v-for="(item, index) in 4"
+            lg="2"
+            v-for="(item, index) in 6"
             :key="index"
           >
             <v-card class="elevation-0 justify">
@@ -198,12 +181,8 @@
 
               <v-card-subtitle style="padding: 3px"></v-card-subtitle>
               <div>
-                <a href="#"
-                  ><h3>
-                    Sadece Sohbet
-                    <v-icon class="ml-6">mdi-dots-vertical</v-icon>
-                  </h3>
-                </a>
+                <v-icon class="float-right">mdi-dots-vertical</v-icon>
+                <a href="#"><h3>Sadece Sohbet</h3> </a>
               </div>
               <div class=""><a href="">302.532 izleyici</a></div>
               <div class="">
@@ -263,7 +242,6 @@ export default {
   transition: 0.5s ease;
 }
 .shadow-2 {
-  width: 170px;
   transition: 0.5s ease;
 }
 .shadow-2:hover {
