@@ -32,24 +32,8 @@
       <v-card-actions>
         <v-spacer />
 
-        <v-btn color="Default" text @click="menu = false"
-          ><svg
-            width="20px"
-            height="20px"
-            version="1.1"
-            viewBox="0 0 20 20"
-            x="0px"
-            y="0px"
-            class="ScIconSVG-sc-1bgeryd-1 cMQeyU"
-          >
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M3 12l7-10 7 10-7 6-7-6zm2.678-.338L10 5.487l4.322 6.173-.85.728L10 11l-3.473 1.39-.849-.729z"
-              fill="#efeff1"
-            ></path>
-          </svg>
-          Bit Al
+        <v-btn color="Default" text @click="menu = false">
+          <v-icon>mdi-ethereum</v-icon> Bit Al
         </v-btn>
       </v-card-actions>
 
@@ -113,9 +97,26 @@
             <v-list>
               <v-list-item>
                 <v-list-item-action>
-                  <v-icon>mdi-cog</v-icon>
+                  <svg
+                    width="20px"
+                    height="20px"
+                    version="1.1"
+                    viewBox="0 0 20 20"
+                    x="0px"
+                    y="0px"
+                    class="ScIconSVG-sc-1bgeryd-1 cMQeyU"
+                  >
+                    <g>
+                      <path
+                        fill-rule="evenodd"
+                        d="M7 2a4 4 0 00-1.015 7.87c-.098.64-.651 1.13-1.318 1.13A2.667 2.667 0 002 13.667V18h2v-4.333c0-.368.298-.667.667-.667.908 0 1.732-.363 2.333-.953.601.59 1.425.953 2.333.953.369 0 .667.299.667.667V18h2v-4.333A2.667 2.667 0 009.333 11c-.667 0-1.22-.49-1.318-1.13A4.002 4.002 0 007 2zM5 6a2 2 0 104 0 2 2 0 00-4 0z"
+                        clip-rule="evenodd"
+                      ></path>
+                      <path d="M12 8h4v1.51V9l2-1v4l-2-1v1h-4V8z"></path>
+                    </g>
+                  </svg>
                 </v-list-item-action>
-                <v-list-item-title>Ayarlar</v-list-item-title>
+                <v-list-item-title>Kanal</v-list-item-title>
               </v-list-item>
             </v-list>
 
@@ -129,7 +130,6 @@
         </v-menu>
       </div>
     </v-app-bar>
-    <!-- Header Bölümü END -->
 
     <!-- Container -->
     <v-main>
@@ -194,7 +194,20 @@
 
         <div class="my-2">
           <h4 style="text-align: center; color: #9147ff; cursor: pointer">
-            Daha Fazla Göster
+            Daha fazla göster
+            <svg
+              class="tw-svg__asset tw-svg__asset--angledown tw-svg__asset--inherit"
+              width="20px"
+              height="20px"
+              version="1.1"
+              viewBox="0 0 20 20"
+              x="0px"
+              y="0px"
+            >
+              <g>
+                <path d="M14.5 6.5L10 11 5.5 6.5 4 8l6 6 6-6-1.5-1.5z"></path>
+              </g>
+            </svg>
           </h4>
         </div>
         <h2>
@@ -307,7 +320,20 @@
 
         <div class="my-2">
           <h4 style="text-align: center; color: #9147ff; cursor: pointer">
-            Daha Fazla Göster
+            Daha fazla göster
+            <svg
+              class="tw-svg__asset tw-svg__asset--angledown tw-svg__asset--inherit"
+              width="20px"
+              height="20px"
+              version="1.1"
+              viewBox="0 0 20 20"
+              x="0px"
+              y="0px"
+            >
+              <g>
+                <path d="M14.5 6.5L10 11 5.5 6.5 4 8l6 6 6-6-1.5-1.5z"></path>
+              </g>
+            </svg>
           </h4>
         </div>
         <!-- Card 2 END -->
